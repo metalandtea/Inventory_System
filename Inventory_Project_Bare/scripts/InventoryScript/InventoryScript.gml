@@ -38,9 +38,9 @@ function inventoryAdd(_id){
 	
 	if _index != -1{
 		global.INVENTORY[_index] = _id;
-		return;
+		return true;
 	}
-	return;
+	return false;
 }
 
 function inventoryRemove(_index){
